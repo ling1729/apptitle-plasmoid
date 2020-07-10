@@ -139,7 +139,7 @@ Item {
               iconItem.source = ""
             }
         } else {
-            appLabel.text = textType === 1 ? actTask.AppName : replaceTitle(actTask.display)
+            appLabel.text = textType === 1 ? replaceTitle(actTask.AppName) : replaceTitle(actTask.display)
             iconItem.source = actTask.decoration
         }
         if (use_fixed_width) {
