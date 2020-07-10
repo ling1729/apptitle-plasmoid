@@ -171,7 +171,7 @@ Item {
     Row {
         id: row
         spacing: 0
-        anchors.centerIn: parent
+        anchors.left: parent.left
 
         PlasmaCore.IconItem {
             id: iconItem
@@ -186,7 +186,7 @@ Item {
             id: appLabel
             text: ""
             font.weight: plasmoid.configuration.bold?Font.Bold:Font.Medium
-            font.capitalization: Font.Capitalize
+            font.capitalization: plasmoid.configuration.capitalize?Font.Capitalize:Font.MixedCase
         }
     }
     MouseArea {

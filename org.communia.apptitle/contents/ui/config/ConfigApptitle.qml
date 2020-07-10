@@ -15,6 +15,7 @@ Item {
     property alias cfg_replaceTextRegex: replaceTextRegex.text
     property alias cfg_replaceTextReplacement: replaceTextReplacement.text
     property alias cfg_bold: bold.checked
+    property alias cfg_capitalize: capitalize.checked
 
 
     GridLayout {
@@ -128,6 +129,11 @@ Item {
                 id: bold
                 text: qsTr("Bold")
                 checked: cfg_bold
+            }
+            CheckBox{
+                id: capitalize
+                text: qsTr("Capitalize")
+                checked: cfg_capitalize
             }
         }
 
